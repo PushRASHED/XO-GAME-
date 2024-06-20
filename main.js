@@ -1,5 +1,5 @@
 let title = document.querySelector('.title')
-let turn = 'x';
+let turn = 'X';
 let squares =[];
 
 function winner(){
@@ -18,16 +18,16 @@ if(squares[1] == squares[2] && squares[2] == squares[3] && squares[1] != ''){
  
 function game(id){
 let element = document.getElementById(id)
-if(turn === 'x' && element.innerHTML == ''){
-    element.innerHTML = 'x'
-    turn = 'o'
-    title.innerHTML = 'o'
+if(turn === 'X' && element.innerHTML == ''){
+    element.innerHTML = 'X'
+    turn = 'O'
+    title.innerHTML = 'O'
 }
-else if(turn === 'o' && element.innerHTML == ""){
+else if(turn === 'O' && element.innerHTML == ""){
 
-    element.innerHTML = 'o'
-    turn = 'x'
-    title.innerHTML = 'x'
+    element.innerHTML = 'O'
+    turn = 'X'
+    title.innerHTML = 'X'
 
 }
 
