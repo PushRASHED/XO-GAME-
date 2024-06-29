@@ -3,7 +3,7 @@ let turn = 'X';
 let squares =[];
 
 
-
+//   Win function 
 function end(num1,num2,num3){
     title.innerHTML = `${squares[num1]} winner`;
     document.getElementById('item' +num1).style.background = 'green'
@@ -77,13 +77,6 @@ end(9,5,1)
     }
 
    
-
-
-
-
-
-
-
 
 
 }
